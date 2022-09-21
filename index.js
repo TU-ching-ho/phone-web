@@ -6,6 +6,9 @@ const resultEl = document.querySelector("#result");
 const resultTextEl = document.querySelector("#result-text");
 const phone = document.querySelector("#p-number");
 const anal = document.querySelector("#analytics")
+const timeE1 = document.querySelector("#time")
+const resultCo = ["吉", "凶", "吉帶凶", "凶帶吉"]
+
 
 function analytics() {
     let pnumber = phone.value;
@@ -27,6 +30,9 @@ function analytics() {
     let code = analyticspnumber(pnumber)
 
     let result = resultText[code - 1];
+    let comment = resultCo[getrandint(0, 3)]
+
+
     console.log(result);
     resultEl.innerText = result[2];
     resultTextEl.innerText = result[1];
@@ -49,4 +55,17 @@ function analyticspnumber(pnumber) {
 
     return code;
 
+}
+
+
+function getTime() {
+    let date = new Date();
+    timeE1.innerText = date;
+    timeE1.innerText = `${date.getFullYear()}-${date.getMonth() + 1}\
+    -${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+    setTimeout(getTime, 1000);
+}
+
+function getrandint(start, end) {
+    return Math.floor(Math.random)
 }

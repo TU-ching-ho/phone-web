@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: rgb(222, 236, 232);
 }
 
 #contanier {
@@ -10,13 +10,14 @@ body {
 
 .title {
     font-size: 30px;
-    color: aliceblue;
-    background-color: black;
+    color: black;
+    background-color: rgb(35, 54, 231);
     padding: 20px;
     display: inline-block;
+    border-radius: 12px;
 }
 
-#timer {
+#time {
     margin-top: 12px;
 }
 

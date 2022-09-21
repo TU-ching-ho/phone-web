@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="sogi.css">
 </head>
 
-<body>
+<body onload="getTime()">
     <div id="contanier">
         <div class="title">
             手機號碼占卜網
         </div>
-        <div id="timer">
-            日期:
+        <div id="time">
+
         </div>
         <p>
             手機號碼一跟10多年，<span class="text-1">號碼選得好，人生沒煩惱</span>
@@ -27,7 +27,7 @@
             <input type="text" id="p-number" maxlength="10">
             <input type="button" value="測算" id="analytics" onclick="analytics()">
             <div id="result">
-                吉
+                預測
             </div>
             <div id="result-text">評語</div>
 
